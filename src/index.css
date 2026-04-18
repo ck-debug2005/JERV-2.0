@@ -1,0 +1,53 @@
+/* Layout helpers on top of theme.css */
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.navbar-spotify .navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
+.cart-nav-btn .badge {
+  background: var(--spotify-green) !important;
+  color: #000 !important;
+  font-weight: 800;
+}
+
+.cart-line-item + .cart-line-item {
+  border-top: 1px dashed var(--spotify-border);
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.cart-panel-spotify .card-header {
+  background: var(--spotify-black) !important;
+  color: #fff;
+  border-bottom-color: var(--spotify-border) !important;
+}
+
+.cart-panel-spotify .input-group-text {
+  background: var(--spotify-card);
+  color: #fff;
+  border-color: var(--spotify-border);
+}
+
+.cart-panel-spotify .btn-outline-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: var(--spotify-border);
+  --bs-btn-hover-bg: var(--spotify-hover);
+  --bs-btn-hover-border-color: #555;
+  --bs-btn-hover-color: #fff;
+}
